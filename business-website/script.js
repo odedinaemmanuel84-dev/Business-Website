@@ -17,6 +17,20 @@ menuBtn.onclick = () => {
 
 };
 
+// CLOSE MENU WHEN LINK IS CLICKED
+
+const navLinks = document.querySelectorAll("#nav a");
+
+navLinks.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    nav.classList.remove("active");
+
+  });
+
+});
+
 // REVEAL ANIMATION
 
 const reveals = document.querySelectorAll(".reveal");
